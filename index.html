@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EuMathematica - Eugène W.Y AKPAOKA</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- AOS Animation -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Roboto', sans-serif; background: linear-gradient(180deg, #0f2027, #203a43, #2c5364); color: #fff; scroll-behavior: smooth; }
+nav { position: fixed; top: 0; left: 0; width: 250px; height: 100%; background: #111; padding: 20px; border-right: 2px solid #ff9900; overflow-y: auto; }
+nav h1 { font-size: 1.6rem; text-align: center; margin-bottom: 30px; background: linear-gradient(90deg,#ff9900,#ff3366); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+nav a { color: #fff; text-decoration: none; display: block; padding: 12px; margin: 6px 0; border-radius: 8px; transition: 0.3s; }
+nav a:hover { background: linear-gradient(90deg,#ff9900,#ff3366); transform: translateX(5px); }
+main { margin-left: 270px; padding: 20px; }
+.section-card { background: rgba(255,255,255,0.05); padding: 25px; margin-bottom: 25px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.6); transition: transform 0.3s, background 0.3s; }
+.section-card:hover { transform: scale(1.02); background: rgba(255,255,255,0.1); }
+.section-card h2 { color: #ff9900; margin-bottom: 15px; border-bottom: 2px solid #ff9900; display: inline-block; padding-bottom: 5px; }
+.section-card h3 { color: #00d4ff; margin-top: 15px; }
+ul, ol { margin-left: 20px; }
+button.corr-btn { background: #ff9900; border: none; color: #111; padding: 8px 15px; margin-top: 10px; border-radius: 6px; cursor: pointer; transition: 0.3s; }
+button.corr-btn:hover { background: #ff3366; color: #fff; }
+
+.correction { display: none; background: rgba(0,0,0,0.3); padding: 15px; margin-top: 10px; border-left: 5px solid #ff9900; border-radius: 5px; }
+footer { text-align: center; padding: 15px; background: #111; margin-top: 30px; border-top: 2px solid #ff9900; border-radius: 8px; color: #ff9900; }
+.intro { background: rgba(0,0,0,0.5); display: flex; align-items: center; gap: 20px; padding: 20px; border-radius: 15px; margin-bottom: 25px; }
+.intro img { width: 200px; border-radius: 10px; border: 3px solid #ff9900; }
+.intro-text h2 { color: #ff9900; }
+.intro-text p { margin: 5px 0; }
+</style>
+</head>
+<body>
+
+<nav>
+<h1>🌐 EuMathematica</h1>
+<a href="#accueil">🏠 Accueil </a>
+<a href="#complexes">1️⃣ Nombres Complexes</a>
+<a href="#log">2️⃣ Fonction Logarithme</a>
+<a href="#exp">3️⃣ Fonction Exponentielle</a>
+<a href="#limites">4️⃣ Limites & Continuité</a>
+<a href="#etude">5️⃣ Étude de Fonction</a>
+<a href="#eqdiff">6️⃣ Équation Différentielle</a>
+<a href="#proba">7️⃣ Probabilité</a>
+<a href="#geometrie">8️⃣ Géométrie dans l'espace</a>
+<a href="#suites">9️⃣ Suites Numériques</a>
+<a href="#arithmetique">🔟 Arithmétique</a>
+<a href="#contact">📞 Contact</a>
+</nav>
+
+<main>
+
+<!-- Intro -->
+<section id="accueil" class="intro" data-aos="fade-right">
+<img src="ton_image.jpg" alt="Photo Eugène">
+<div class="intro-text">
+<h2>Eugène W.Y AKPAOKA</h2>
+<p>🎓 Étudiant en Master Mathématique Fondamentale à IMSP</p>
+<p>Bienvenue sur le site <strong>EuMathematica</strong> de M. Eugène AKPAOKA.</p>
+<p>Contact : 67701169 | Email : eugenewyakpaoka@gmail.com</p>
+</div>
+</section>
+
+<!-- Section 1: Nombres Complexes -->
+<section id="complexes" class="section-card" data-aos="fade-up">
+<h2>1️⃣ Nombres Complexes</h2>
+<h3>Cours & explications</h3>
+<p>Un nombre complexe peut s'écrire z = a + ib, avec a,b réels et i²=-1. Il peut être représenté dans le plan complexe comme un point ou vecteur.</p>
+<h3>Formules & propriétés</h3>
+<ul>
+<li>Conjugué : z̄ = a - ib</li>
+<li>Module : |z| = √(a²+b²)</li>
+<li>Argument : θ = arg(z)</li>
+<li>Forme exponentielle : z = r e^(iθ)</li>
+</ul>
+<h3>Exercices</h3>
+<ol>
+<li>Représenter graphiquement z = 3+4i et calculer |z|</li>
+<li>Conjugué de z=-2+5i</li>
+<li>Résoudre z²+4z+5=0</li>
+<li>Exprimer z=-1+i√3 en forme exponentielle</li>
+<li>Déterminer 4e racines de l’unité</li>
+<li>Somme de z et z̄</li>
+<li>Produit de z et z̄</li>
+<li>Module de z1*z2</li>
+<li>Argument de z1/z2</li>
+<li>Vérifier si |z1+z2| ≤ |z1|+|z2|</li>
+</ol>
+<button class="corr-btn" onclick="document.getElementById('corrComplexe').style.display='block'">Afficher corrigés</button>
+<div id="corrComplexe" class="correction">
+<ol>
+<li>|z| = 5</li>
+<li>z̄ = -2-5i</li>
+<li>z = -2±i</li>
+<li>z = 2 e^(i2π/3)</li>
+<li>1, i, -1, -i</li>
+<li>Somme = 2a</li>
+<li>Produit = a²+b²</li>
+<li>|z1*z2| = |z1||z2|</li>
+<li>arg(z1/z2) = arg(z1)-arg(z2)</li>
+<li>Vrai, triangle complexe</li>
+</ol>
+</div>
+</section>
+
+<!-- Section 2: Fonction Logarithme -->
+<section id="log" class="section-card" data-aos="fade-up">
+<h2>2️⃣ Fonction Logarithme Népérien</h2>
+<h3>Cours & explications</h3>
+<p>Le logarithme népérien ln(x) est la fonction réciproque de l’exponentielle. Elle est définie pour x>0 et possède plusieurs propriétés importantes.</p>
+<h3>Formules & propriétés</h3>
+<ul>
+<li>ln(xy) = ln(x) + ln(y)</li>
+<li>ln(x/y) = ln(x) - ln(y)</li>
+<li>ln(x^n) = n ln(x)</li>
+<li>ln(e^x) = x</li>
+</ul>
+<h3>Exercices</h3>
+<ol>
+<li>Calculer ln(1)</li>
+<li>Calculer ln(e)</li>
+<li>Calculer ln(e^3)</li>
+<li>Montrer ln(2*3) = ln2 + ln3</li>
+<li>Calculer ln(1/5)</li>
+<li>Simplifier ln(a^4)</li>
+<li>Résoudre ln(x) = 2</li>
+<li>Résoudre ln(x) + ln(2) = ln(6)</li>
+<li>Exprimer ln(√x)</li>
+<li>Résoudre ln(x) - ln(3) = 1</li>
+</ol>
+<button class="corr-btn" onclick="document.getElementById('corrLog').style.display='block'">Afficher corrigés</button>
+<div id="corrLog" class="correction">
+<ol>
+<li>0</li>
+<li>1</li>
+<li>3</li>
+<li>ln6</li>
+<li>-ln5</li>
+<li>4ln(a)</li>
+<li>x = e^2</li>
+<li>x=3</li>
+<li>ln(√x)=1/2 ln(x)</li>
+<li>x=3e</li>
+</ol>
+</div>
+</section>
+
+<!-- Section 3: Fonction Exponentielle -->
+<section id="exp" class="section-card" data-aos="fade-up">
+<h2>3️⃣ Fonction Exponentielle</h2>
+<h3>Cours & explications</h3>
+<p>La fonction exponentielle f(x)=e^x est continue et dérivable sur ℝ. Elle possède des propriétés de croissance et de dérivabilité.</p>
+<h3>Formules & propriétés</h3>
+<ul>
+<li>(e^x)' = e^x</li>
+<li>e^(x+y) = e^x * e^y</li>
+<li>e^0 = 1</li>
+<li>ln(e^x) = x</li>
+</ul>
+<h3>Exercices</h3>
+<ol>
+<li>Calculer e^0</li>
+<li>Calculer e^1</li>
+<li>Résoudre e^x = e^3</li>
+<li>Résoudre e^(2x) = 7</li>
+<li>Simplifier e^(x+y)</li>
+<li>Résoudre ln(e^x)=5</li>
+<li>Déterminer la dérivée de e^x</li>
+<li>Résoudre e^x = 1/2</li>
+<li>Résoudre e^(x-2) = 3</li>
+<li>Montrer e^x * e^-x = 1</li>
+</ol>
+<button class="corr-btn" onclick="document.getElementById('corrExp').style.display='block'">Afficher corrigés</button>
+<div id="corrExp" class="correction">
+<ol>
+<li>1</li>
+<li>e</li>
+<li>x=3</li>
+<li>x=ln7/2</li>
+<li>e^x * e^y</li>
+<li>x=5</li>
+<li>e^x</li>
+<li>x=ln(1/2)</li>
+<li>x=ln3+2</li>
+<li>1</li>
+</ol>
+</div>
+</section>
+
+<!-- Section 4 à 10 -->
+<!-- Pour chaque section, suivre le même format : cours, propriétés, 10 exercices, bouton de correction, div correction -->
+<!-- Section 4: Limites et Continuité -->
+<section id="limites" class="section-card" data-aos="fade-up">
+<h2>4️⃣ Limites et Continuité</h2>
+
+<h3>Cours & explications</h3>
+<p>La limite d'une fonction f(x) lorsque x tend vers a permet de connaître le comportement de f(x) près de a.</p>
+<p>Une fonction f est continue en a si : <strong>lim x→a f(x) = f(a)</strong>.</p>
+
+<h3>Formules & propriétés</h3>
+<ul>
+<li>lim x→a [f(x) + g(x)] = lim f(x) + lim g(x)</li>
+<li>lim x→a [f(x) * g(x)] = lim f(x) * lim g(x)</li>
+<li>lim x→a [f(x)/g(x)] = lim f(x)/lim g(x), g(a) ≠ 0</li>
+<li>lim x→∞ 1/x = 0</li>
+<li>lim x→0 sin(x)/x = 1</li>
+</ul>
+
+<h3>Exercices</h3>
+<ol>
+<li>Calculer lim x→2 (3x+1)</li>
+<li>Calculer lim x→0 sin(x)/x</li>
+<li>Calculer lim x→∞ 5/x</li>
+<li>Calculer lim x→1 (x²-1)/(x-1)</li>
+<li>Vérifier si f(x)=x² est continue en x=3</li>
+<li>Calculer lim x→0 (1-cos(x))/x²</li>
+<li>Calculer lim x→∞ (2x²+3)/(x²+1)</li>
+<li>Vérifier continuité de f(x)=1/x en x=0</li>
+<li>Calculer lim x→2 (x³-8)/(x-2)</li>
+<li>Calculer lim x→∞ (3x-5)/(2x+1)</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrLimites').style.display='block'">Afficher corrigés</button>
+<div id="corrLimites" class="correction">
+<ol>
+<li>3*2+1 = 7</li>
+<li>1</li>
+<li>0</li>
+<li>lim = (1²-1)/(1-1) → forme 0/0 → factoriser: (x-1)(x+1)/(x-1) → lim = 2</li>
+<li>f(3)=9, lim x→3 f(x)=9 → continue</li>
+<li>1/2</li>
+<li>2</li>
+<li>Non, division par 0</li>
+<li>lim = (8-8)/(2-2) → 0/0 → factoriser: (x-2)(x²+2x+4)/(x-2) → lim = 12</li>
+<li>3/2</li>
+</ol>
+</div>
+</section>
+<!-- Section 5: Étude de Fonction -->
+<section id="etude-fonction" class="section-card" data-aos="fade-up">
+<h2>5️⃣ Étude de Fonction</h2>
+
+<h3>Cours & explications</h3>
+<p>L’étude de fonction consiste à analyser les variations, les extremums, les limites et le graphe d’une fonction donnée.  
+On utilise souvent la dérivée f'(x) pour déterminer le sens de variation.</p>
+
+<h3>Principales étapes</h3>
+<ol>
+<li>Déterminer le domaine de définition</li>
+<li>Calculer les limites aux bornes</li>
+<li>Calculer la dérivée f'(x)</li>
+<li>Résoudre f'(x) = 0 pour trouver les points critiques</li>
+<li>Étudier le signe de f'(x) pour obtenir le tableau de variation</li>
+<li>Tracer le graphique</li>
+</ol>
+
+<h3>Formules utiles</h3>
+<ul>
+<li>f'(x) > 0 ⇒ f croissante</li>
+<li>f'(x) < 0 ⇒ f décroissante</li>
+<li>f'(x) = 0 ⇒ extremum possible</li>
+<li>Extremum local = minimum ou maximum sur un intervalle</li>
+</ul>
+
+<h3>Exercices</h3>
+<ol>
+<li>Étudier les variations de f(x)=x²</li>
+<li>Étudier f(x)=x³-3x</li>
+<li>Déterminer les extremums de f(x) = -x²+4x+1</li>
+<li>Tracer le tableau de variation de f(x) = 1/x</li>
+<li>Étudier f(x)=√x sur [0,4]</li>
+<li>Déterminer les extremums de f(x) = x⁴-4x²</li>
+<li>Étudier f(x) = e^x - 2x</li>
+<li>Tracer le tableau de variation de f(x) = ln(x)</li>
+<li>Étudier f(x) = sin(x) sur [0,2π]</li>
+<li>Déterminer les extremums de f(x) = cos(x) + x</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrEtudeFonction').style.display='block'">Afficher corrigés</button>
+<div id="corrEtudeFonction" class="correction" style="display:none;">
+<ol>
+<li>Domaine ℝ, f'(x)=2x : décroissante sur (-∞,0), croissante sur (0,+∞), min en 0</li>
+<li>f'(x)=3x²-3=3(x-1)(x+1) : max local en -1, min local en 1</li>
+<li>f'(x)=-2x+4=0 → x=2 : max local f(2)=5</li>
+<li>Domaine ℝ\{0}, décroissante sur (-∞,0), décroissante sur (0,+∞)</li>
+<li>Croissante sur [0,4], min en 0, max en 4</li>
+<li>f'(x)=4x³-8x=4x(x²-2) : min locaux en ±√2, max en 0</li>
+<li>f'(x)=e^x - 2 = 0 → e^x=2 → x=ln(2)</li>
+<li>Croissante sur (0,+∞)</li>
+<li>f'(x)=cos(x) : max en 0, min en π</li>
+<li>f'(x)=-sin(x)+1=0 → sin(x)=1 → x=π/2</li>
+</ol>
+</div>
+</section>
+<!-- Section 6: Dérivation -->
+<section id="derivation" class="section-card" data-aos="fade-up">
+<h2>6️⃣ Dérivation</h2>
+
+<h3>Cours & explications</h3>
+<p>
+La dérivation est un outil fondamental pour étudier les variations d’une fonction.  
+La dérivée f'(x) mesure la pente de la tangente à la courbe de f en un point x.  
+Elle permet de déterminer la croissance, la décroissance et les extremums.
+</p>
+
+<h3>Règles de dérivation</h3>
+<ul>
+<li>(k)' = 0</li>
+<li>(xⁿ)' = n·xⁿ⁻¹</li>
+<li>(u+v)' = u' + v'</li>
+<li>(u·v)' = u'·v + u·v'</li>
+<li>(u/v)' = (u'·v - u·v') / v²</li>
+<li>(u∘v)' = (u'∘v) · v'</li>
+<li>(e^u)' = u'·e^u</li>
+<li>(ln u)' = u'/u</li>
+<li>(sin u)' = u'·cos u</li>
+<li>(cos u)' = -u'·sin u</li>
+</ul>
+
+<h3>Exercices</h3>
+<ol>
+<li>Dériver f(x) = 3x² + 5x - 7</li>
+<li>Dériver f(x) = (2x³ - x)·(x² + 1)</li>
+<li>Dériver f(x) = (x² + 1) / (x - 1)</li>
+<li>Dériver f(x) = e^(2x)</li>
+<li>Dériver f(x) = ln(x² + 3)</li>
+<li>Dériver f(x) = sin(3x)</li>
+<li>Dériver f(x) = cos(x²)</li>
+<li>Dériver f(x) = x·e^x</li>
+<li>Dériver f(x) = (x² - 1)·ln(x)</li>
+<li>Dériver f(x) = (sin x)/(cos x)</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrDerivation').style.display='block'">Afficher corrigés</button>
+<div id="corrDerivation" class="correction" style="display:none;">
+<ol>
+<li>f'(x) = 6x + 5</li>
+<li>f'(x) = (6x² - 1)(x² + 1) + (2x³ - x)(2x)</li>
+<li>f'(x) = [(2x)(x - 1) - (x² + 1)(1)] / (x - 1)²</li>
+<li>f'(x) = 2e^(2x)</li>
+<li>f'(x) = (2x)/(x² + 3)</li>
+<li>f'(x) = 3cos(3x)</li>
+<li>f'(x) = -2x·sin(x²)</li>
+<li>f'(x) = e^x + x·e^x</li>
+<li>f'(x) = 2x·ln(x) + (x² - 1)/x</li>
+<li>f'(x) = (cos²x + sin²x) / cos²x = 1/cos²x</li>
+</ol>
+</div>
+</section>
+<!-- Section 7: Continuité -->
+<section id="continuite" class="section-card" data-aos="fade-up">
+<h2>7️⃣ Continuité</h2>
+
+<h3>Définition</h3>
+<p>
+Une fonction <em>f</em> est continue en un point <em>a</em> si :
+<ul>
+<li>f(a) existe,</li>
+<li>lim<sub>x→a</sub> f(x) existe,</li>
+<li>lim<sub>x→a</sub> f(x) = f(a).</li>
+</ul>
+Si f est continue sur un intervalle I, cela signifie que la courbe représentative ne présente ni "trou", ni "saut" sur I.
+</p>
+
+<h3>Propriétés</h3>
+<ul>
+<li>La somme, le produit et le quotient (si dénominateur ≠ 0) de fonctions continues sont continues.</li>
+<li>Les fonctions polynomiales et exponentielles sont continues sur ℝ.</li>
+<li>La fonction ln(x) est continue sur ]0, +∞[.</li>
+<li>Les fonctions trigonométriques sin et cos sont continues sur ℝ.</li>
+</ul>
+
+<h3>Exercices</h3>
+<ol>
+<li>Vérifier la continuité de f(x) = 3x² + 2x - 1 en x = 1.</li>
+<li>Vérifier si f(x) = (x² - 1)/(x - 1) est continue en x = 1.</li>
+<li>Vérifier la continuité de f(x) = ln(x) sur son domaine.</li>
+<li>Déterminer l’ensemble de continuité de f(x) = (x² + 1)/(x - 2).</li>
+<li>Montrer que g(x) = sin(x)/x est continue en 0 par prolongement.</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrContinuite').style.display='block'">Afficher corrigés</button>
+<div id="corrContinuite" class="correction" style="display:none;">
+<ol>
+<li>f(1) = 4, lim<sub>x→1</sub> f(x) = 4, donc continue en x = 1.</li>
+<li>Simplification : f(x) = x + 1 pour x ≠ 1, donc lim<sub>x→1</sub> f(x) = 2 ≠ f(1) (qui est indéfini), donc pas continue en 1.</li>
+<li>ln(x) est continue sur ]0, +∞[ par définition.</li>
+<li>Continue sur ℝ \ {2} (dénominateur nul en x = 2).</li>
+<li>Prolongement : lim<sub>x→0</sub> sin(x)/x = 1, donc g(0) = 1 ⇒ continue en 0 par prolongement.</li>
+</ol>
+</div>
+</section>
+<!-- Section 8: Asymptotes -->
+<section id="asymptotes" class="section-card" data-aos="fade-up">
+<h2>8️⃣ Asymptotes</h2>
+
+<h3>Définition</h3>
+<p>
+Une <strong>asymptote</strong> est une droite que la courbe représentative d’une fonction <em>f</em> approche de façon infinie, sans jamais (ou presque) la toucher, lorsque x tend vers ±∞ ou vers une valeur interdite.
+</p>
+
+<h3>Types d’asymptotes</h3>
+<ul>
+<li><strong>Asymptote verticale</strong> : lorsque lim<sub>x→a⁺</sub> f(x) = ±∞ ou lim<sub>x→a⁻</sub> f(x) = ±∞.</li>
+<li><strong>Asymptote horizontale</strong> : lorsque lim<sub>x→±∞</sub> f(x) = L ∈ ℝ.</li>
+<li><strong>Asymptote oblique</strong> : lorsque lim<sub>x→±∞</sub> (f(x) - (mx + p)) = 0 avec m ≠ 0.</li>
+</ul>
+
+<h3>Méthode pour trouver les asymptotes</h3>
+<ol>
+<li>Déterminer le domaine de définition de f(x).</li>
+<li>Étudier les limites aux bornes du domaine (y compris ±∞).</li>
+<li>Identifier les droites d’équation x = a (verticales), y = L (horizontales) ou y = mx + p (obliques).</li>
+</ol>
+
+<h3>Exercices</h3>
+<ol>
+<li>Trouver les asymptotes de f(x) = 1/(x - 2).</li>
+<li>Trouver les asymptotes de f(x) = (2x² - 3x + 1)/(x - 1).</li>
+<li>Trouver les asymptotes de f(x) = (x² + 1)/(x² - 4).</li>
+<li>Trouver les asymptotes de f(x) = (3x - 1)/2x.</li>
+<li>Trouver les asymptotes de f(x) = (x³ + 2)/(x² - 1).</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrAsymptotes').style.display='block'">Afficher corrigés</button>
+<div id="corrAsymptotes" class="correction" style="display:none;">
+<ol>
+<li>Domaine : ℝ \ {2}, lim<sub>x→2</sub> = ±∞ → Asymptote verticale x = 2. lim<sub>x→±∞</sub> f(x) = 0 → Asymptote horizontale y = 0.</li>
+<li>Domaine : ℝ \ {1}, x = 1 verticale. Division : f(x) = 2x - 1 + 0/(x - 1) → Asymptote oblique y = 2x - 1.</li>
+<li>Domaine : ℝ \ {±2}, verticales x = 2 et x = -2. lim<sub>x→±∞</sub> = 1 → horizontale y = 1.</li>
+<li>Domaine : ℝ \ {0}, lim<sub>x→0</sub> = ±∞ verticale x = 0. lim<sub>x→±∞</sub> = 3/2 horizontale y = 1.5.</li>
+<li>Domaine : ℝ \ {±1}, verticales x = ±1. Division : f(x) = x + 0/(x² - 1) → Asymptote oblique y = x.</li>
+</ol>
+</div>
+</section>
+<!-- Section 9: Bijections -->
+<section id="bijections" class="section-card" data-aos="fade-up">
+<h2>9️⃣ Bijections</h2>
+
+<h3>Définition</h3>
+<p>
+Une application \( f : A \to B \) est une <strong>bijection</strong> si elle est à la fois <em>injective</em> (chaque élément de B a au plus un antécédent) et <em>surjective</em> (chaque élément de B a au moins un antécédent).
+Autrement dit, chaque élément de B correspond à un <u>unique</u> élément de A.
+</p>
+
+<h3>Schéma explicatif</h3>
+<p>
+Imagine deux ensembles A et B. Une flèche partant d’un élément de A et arrivant dans B sans que deux éléments distincts de A aient la même image, et en couvrant tout B.
+</p>
+
+<h3>Propriétés</h3>
+<ul>
+<li>Une bijection admet une <strong>fonction réciproque</strong> \( f^{-1} \).</li>
+<li>La composée de deux bijections est une bijection.</li>
+<li>Si \( f \) est bijective, alors elle établit une correspondance parfaite entre A et B.</li>
+</ul>
+
+<h3>Vérifier qu’une fonction est bijective</h3>
+<ol>
+<li>Montrer que \( f \) est <em>injective</em> : \( f(x_1) = f(x_2) \Rightarrow x_1 = x_2 \).</li>
+<li>Montrer que \( f \) est <em>surjective</em> : pour tout \( y \in B \), il existe \( x \in A \) tel que \( f(x) = y \).</li>
+</ol>
+
+<h3>Exemples</h3>
+<ol>
+<li>\( f : \mathbb{R} \to \mathbb{R},\ f(x) = 3x + 2 \) → bijective car linéaire affine avec pente ≠ 0.</li>
+<li>\( f : \mathbb{R}^* \to \mathbb{R}^*,\ f(x) = \frac{1}{x} \) → bijective, réciproque : \( f^{-1}(x) = \frac{1}{x} \).</li>
+<li>\( f : \mathbb{R} \to [0,+\infty[,\ f(x) = x^2 \) → pas bijective car non injective (x et -x ont la même image).</li>
+</ol>
+
+<h3>Exercices</h3>
+<ol>
+<li>Montrer que \( f(x) = 5x - 1 \) est bijective sur \(\mathbb{R}\).</li>
+<li>Déterminer si \( f(x) = e^x \) est bijective sur \(\mathbb{R}\) vers \(\mathbb{R}^+\).</li>
+<li>Vérifier si \( f(x) = |x| \) est bijective sur \(\mathbb{R}^+\).</li>
+<li>Trouver la réciproque de \( f(x) = 2x + 7 \).</li>
+<li>Trouver la réciproque de \( f(x) = \frac{x-3}{4} \).</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrBijections').style.display='block'">Afficher corrigés</button>
+<div id="corrBijections" class="correction" style="display:none;">
+<ol>
+<li>Injective car 5x₁ - 1 = 5x₂ - 1 ⇒ x₁ = x₂ ; surjective car tout réel y est atteint : x = (y+1)/5.</li>
+<li>Injective sur ℝ et surjective vers ℝ⁺, donc bijective.</li>
+<li>Pas injective sur ℝ car |2| = |-2|, mais injective si on restreint à ℝ⁺.</li>
+<li>Réciproque : \( f^{-1}(x) = \frac{x - 7}{2} \).</li>
+<li>Réciproque : \( f^{-1}(x) = 4x + 3 \).</li>
+</ol>
+</div>
+</section>
+<!-- Section 10: Arithmétique -->
+<section id="arithmetique" class="section-card" data-aos="fade-up">
+<h2>🔟 Arithmétique</h2>
+
+<h3>Définitions clés</h3>
+<ul>
+<li><strong>Divisibilité :</strong> Un entier \( a \) est divisible par un entier \( b \) (\( b \neq 0 \)) si \( a = b \times k \) pour un certain entier \( k \). On note \( b \mid a \).</li>
+<li><strong>PGCD :</strong> Plus grand entier qui divise simultanément deux entiers.</li>
+<li><strong>PPCM :</strong> Plus petit entier commun multiple à deux entiers non nuls.</li>
+<li><strong>Nombre premier :</strong> Entier naturel \( > 1 \) qui n'a que deux diviseurs : 1 et lui-même.</li>
+</ul>
+
+<h3>Propriétés</h3>
+<ul>
+<li>Si \( a \mid b \) et \( b \mid c \) alors \( a \mid c \).</li>
+<li>Relation fondamentale :  
+\[
+a \times b = \text{PGCD}(a,b) \times \text{PPCM}(a,b)
+\]</li>
+<li>Tout entier \( n \geq 2 \) peut s'écrire comme un produit de nombres premiers (unicité de la décomposition).</li>
+</ul>
+
+<h3>Algorithme d'Euclide (PGCD)</h3>
+<ol>
+<li>Diviser le plus grand des deux nombres par le plus petit.</li>
+<li>Remplacer le plus grand par le reste obtenu.</li>
+<li>Répéter jusqu'à obtenir un reste nul. Le dernier diviseur non nul est le PGCD.</li>
+</ol>
+
+<h3>Exemples</h3>
+<ol>
+<li>\( 36 \mid 108 \) car \( 108 = 36 \times 3 \).</li>
+<li>PGCD(18, 24) = 6 et PPCM(18, 24) = 72.</li>
+<li>7 est premier ; 21 ne l'est pas car \( 21 = 3 \times 7 \).</li>
+</ol>
+
+<h3>Théorème de Bézout</h3>
+<p>
+Si \( d = \text{PGCD}(a,b) \), alors il existe des entiers \( u \) et \( v \) tels que :
+\[
+au + bv = d
+\]
+</p>
+
+<h3>Petit théorème de Fermat</h3>
+<p>
+Si \( p \) est premier et \( a \) un entier non divisible par \( p \), alors :
+\[
+a^{p-1} \equiv 1 \ (\text{mod}\ p)
+\]
+</p>
+
+<h3>Exercices</h3>
+<ol>
+<li>Déterminer si 91 est un nombre premier.</li>
+<li>Calculer PGCD(48, 180) et PPCM(48, 180).</li>
+<li>Décomposer 360 en facteurs premiers.</li>
+<li>Résoudre \( 35u + 21v = 7 \) en entiers.</li>
+<li>Vérifier le petit théorème de Fermat pour \( a=3 \) et \( p=7 \).</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrArithmetique').style.display='block'">Afficher corrigés</button>
+<div id="corrArithmetique" class="correction" style="display:none;">
+<ol>
+<li>91 = 7 × 13 ⇒ pas premier.</li>
+<li>PGCD(48,180) = 12 ; PPCM = 48 × 180 / 12 = 720.</li>
+<li>360 = 2³ × 3² × 5.</li>
+<li>PGCD(35,21) = 7 ⇒ u=2, v=-3 est une solution.</li>
+<li>3⁶ = 729 et 729 mod 7 = 1 ⇒ vérifié.</li>
+</ol>
+</div>
+</section>
+<!-- Section 11: Probabilités -->
+<section id="probabilites" class="section-card" data-aos="fade-up">
+<h2>1️⃣1️⃣ Probabilités</h2>
+
+<h3>Vocabulaire de base</h3>
+<ul>
+<li><strong>Expérience aléatoire :</strong> expérience dont l’issue ne peut pas être prévue avec certitude.</li>
+<li><strong>Univers :</strong> ensemble \( \Omega \) des issues possibles.</li>
+<li><strong>Événement :</strong> sous-ensemble de \( \Omega \).</li>
+<li><strong>Événement certain :</strong> \(\Omega\) ; <strong>Événement impossible :</strong> \(\varnothing\).</li>
+</ul>
+
+<h3>Probabilité d’un événement</h3>
+<p>
+Si les issues sont équiprobables :
+\[
+P(A) = \frac{\text{nombre d’issues favorables}}{\text{nombre total d’issues}}
+\]
+</p>
+
+<h3>Propriétés</h3>
+<ul>
+<li>0 ≤ P(A) ≤ 1</li>
+<li>P(Ω) = 1 ; P(∅) = 0</li>
+<li>P(Ā) = 1 − P(A)</li>
+<li>P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</li>
+</ul>
+
+<h3>Probabilités conditionnelles</h3>
+<p>
+Si P(B) > 0 :
+\[
+P(A \mid B) = \frac{P(A \cap B)}{P(B)}
+\]
+</p>
+
+<h3>Indépendance</h3>
+<p>
+A et B sont indépendants si :
+\[
+P(A \cap B) = P(A) \times P(B)
+\]
+</p>
+
+<h3>Formule des probabilités totales</h3>
+<p>
+Si \( (B_1, B_2, \dots, B_n) \) est une partition de Ω :
+\[
+P(A) = \sum_{i=1}^n P(A \mid B_i) \cdot P(B_i)
+\]
+</p>
+
+<h3>Théorème de Bayes</h3>
+<p>
+\[
+P(B_j \mid A) = \frac{P(A \mid B_j) \cdot P(B_j)}{\sum_{i=1}^n P(A \mid B_i) \cdot P(B_i)}
+\]
+</p>
+
+<h3>Exemples</h3>
+<ol>
+<li>Lancer un dé : P(obtenir un 4) = 1/6.</li>
+<li>Pioche d’une carte rouge dans un jeu de 52 cartes : 26/52 = 1/2.</li>
+<li>Piocher un as après avoir tiré un roi et l’avoir remis : événements indépendants.</li>
+</ol>
+
+<h3>Exercices</h3>
+<ol>
+<li>On lance deux dés : calculer P(somme = 7).</li>
+<li>On tire deux cartes sans remise : calculer P(2 as).</li>
+<li>Une urne contient 5 boules rouges et 3 bleues : P(2 rouges avec remise) ?</li>
+<li>Vérifier si tirer un roi et tirer un as (avec remise) sont indépendants.</li>
+<li>Appliquer Bayes à un test médical ayant 95 % de fiabilité.</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrProbabilites').style.display='block'">Afficher corrigés</button>
+<div id="corrProbabilites" class="correction" style="display:none;">
+<ol>
+<li>6 cas favorables sur 36 ⇒ 1/6.</li>
+<li>\( \frac{4}{52} \times \frac{3}{51} = \frac{12}{2652} = \frac{1}{221} \).</li>
+<li>\( \frac{5}{8} \times \frac{5}{8} = \frac{25}{64} \).</li>
+<li>Indépendants car P(Roi ∩ As) = P(Roi) × P(As).</li>
+<li>Bayes appliqué : résultat dépend de la prévalence.</li>
+</ol>
+</div>
+</section>
+<!-- Section 12: Statistiques -->
+<section id="statistiques" class="section-card" data-aos="fade-up">
+<h2>1️⃣2️⃣ Statistiques</h2>
+
+<h3>Vocabulaire et notions de base</h3>
+<ul>
+<li><strong>Population :</strong> ensemble des individus étudiés.</li>
+<li><strong>Effectif 👎 :</strong> nombre d’individus de la population.</li>
+<li><strong>Fréquence (f) :</strong> \( f = \frac{\text{effectif de la modalité}}{\text{effectif total}} \).</li>
+<li><strong>Série statistique :</strong> tableau regroupant les valeurs observées et leurs effectifs.</li>
+</ul>
+
+<h3>Mesures de tendance centrale</h3>
+<ul>
+<li><strong>Moyenne :</strong> \( \bar{x} = \frac{\sum x_i \cdot n_i}{\sum n_i} \)</li>
+<li><strong>Médiane :</strong> valeur qui partage la population en deux parties égales.</li>
+<li><strong>Mode :</strong> valeur la plus fréquente.</li>
+</ul>
+
+<h3>Mesures de dispersion</h3>
+<ul>
+<li><strong>Étendue :</strong> max − min.</li>
+<li><strong>Variance :</strong> \( V = \frac{\sum n_i (x_i - \bar{x})^2}{N} \)</li>
+<li><strong>Écart-type :</strong> \( \sigma = \sqrt{V} \)</li>
+</ul>
+
+<h3>Tableau de fréquences cumulées</h3>
+<p>Permet de déterminer la médiane, les quartiles et autres indicateurs de position.</p>
+
+<h3>Exemple</h3>
+<p>On a relevé les notes suivantes pour 10 élèves :</p>
+<table>
+<tr><th>Note</th><th>Effectif</th></tr>
+<tr><td>8</td><td>2</td></tr>
+<tr><td>10</td><td>3</td></tr>
+<tr><td>12</td><td>4</td></tr>
+<tr><td>15</td><td>1</td></tr>
+</table>
+<p>
+Moyenne :  
+\( \bar{x} = \frac{8 \times 2 + 10 \times 3 + 12 \times 4 + 15 \times 1}{10} = \frac{16 + 30 + 48 + 15}{10} = \frac{109}{10} = 10,9 \).
+</p>
+
+<h3>Représentations graphiques</h3>
+<ul>
+<li>Histogramme</li>
+<li>Diagramme en bâtons</li>
+<li>Polygone de fréquences</li>
+<li>Boîte à moustaches (boxplot)</li>
+</ul>
+
+<h3>Exercices</h3>
+<ol>
+<li>Calculer la moyenne et l’écart-type de la série : {5, 7, 7, 8, 10}.</li>
+<li>Déterminer la médiane et les quartiles d’une série donnée.</li>
+<li>Construire l’histogramme d’une série statistique regroupée en classes.</li>
+<li>Interpréter une boîte à moustaches.</li>
+<li>Comparer deux séries statistiques sur la base de leur moyenne et écart-type.</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrStatistiques').style.display='block'">Afficher corrigés</button>
+<div id="corrStatistiques" class="correction" style="display:none;">
+<ol>
+<li>Moyenne = 7,4 ; Variance ≈ 3,04 ; Écart-type ≈ 1,74.</li>
+<li>Médiane = valeur centrale ; quartiles = valeurs coupant les 25 % et 75 %.</li>
+<li>Tracer les rectangles avec base = largeur de classe et hauteur proportionnelle à la densité.</li>
+<li>La boîte représente l’intervalle interquartile ; les moustaches = min et max hors valeurs extrêmes.</li>
+<li>Comparer la tendance centrale et la dispersion pour déterminer quelle série est plus homogène.</li>
+</ol>
+</div>
+</section>
+<!-- Section Équations différentielles -->
+<section id="equations-differentielles" class="section-card" data-aos="fade-up">
+<h2>📊 Équations différentielles</h2>
+
+<h3>1. Définition</h3>
+<p>
+Une <strong>équation différentielle</strong> est une équation qui relie une fonction inconnue à ses dérivées.  
+Elle sert à modéliser des phénomènes physiques, biologiques, économiques, etc.
+</p>
+
+<h3>2. Types principaux</h3>
+<ul>
+<li><strong>Ordre 1</strong> : implique la dérivée première \( y'(x) \).</li>
+<li><strong>Ordre 2</strong> : implique la dérivée seconde \( y''(x) \).</li>
+<li><strong>À coefficients constants</strong> : les coefficients sont des constantes.</li>
+<li><strong>À variables séparables</strong> : on peut isoler \( y \) et \( x \) de part et d’autre.</li>
+<li><strong>Linéaires</strong> : de la forme \( y' + a(x)y = b(x) \).</li>
+</ul>
+
+<h3>3. Méthodes de résolution</h3>
+<ol>
+<li>
+<strong>Variables séparables</strong>  
+On écrit \( \frac{dy}{dx} = f(x)g(y) \), puis on intègre :  
+\( \int \frac{1}{g(y)}\,dy = \int f(x)\,dx + C \).
+</li>
+<li>
+<strong>Équation linéaire du 1er ordre</strong>  
+\( y' + a(x)y = b(x) \)  
+Solution :  
+\( y = e^{-\int a(x)dx} \left( \int b(x) e^{\int a(x)dx}dx + C \right) \).
+</li>
+<li>
+<strong>Équations différentielles homogènes du 2e ordre à coefficients constants</strong>  
+\( ay'' + by' + cy = 0 \)  
+On résout l’équation caractéristique \( ar^2 + br + c = 0 \) pour obtenir la solution générale.
+</li>
+</ol>
+
+<h3>4. Exemples classiques</h3>
+<ul>
+<li>Refroidissement de Newton : \( \frac{dT}{dt} = -k(T - T_{\text{ext}}) \)</li>
+<li>Croissance exponentielle : \( \frac{dy}{dt} = ky \)</li>
+<li>Oscillateur harmonique : \( y'' + \omega^2 y = 0 \)</li>
+</ul>
+
+<h3>5. Exercices</h3>
+<ol>
+<li>Résoudre \( \frac{dy}{dx} = 3y \) avec \( y(0) = 2 \).</li>
+<li>Résoudre \( y' + 2y = 5 \) avec \( y(0) = 1 \).</li>
+<li>Résoudre \( y'' - 4y' + 4y = 0 \).</li>
+<li>Modéliser et résoudre la loi de refroidissement de Newton avec \( k = 0.1 \), \( T_{\text{ext}} = 20 \), \( T(0) = 80 \).</li>
+</ol>
+
+<button class="corr-btn" onclick="document.getElementById('corrED').style.display='block'">Afficher corrigés</button>
+<div id="corrED" class="correction" style="display:none;">
+<ol>
+<li>\( y = 2e^{3x} \).</li>
+<li>Facteur intégrant : \( e^{2x} \), solution : \( y = \frac{5}{2} + Ce^{-2x} \) → avec \( y(0) = 1 \), \( C = -\frac{3}{2} \).</li>
+<li>Équation caractéristique : \( (r - 2)^2 = 0 \) → solution : \( y = (A + Bx)e^{2x} \).</li>
+<li>Solution : \( T(t) = 20 + 60e^{-0.1t} \).</li>
+</ol>
+</div>
+</section>
+<!-- Section Contact -->
+<section id="contact" class="section-card" data-aos="fade-up">
+<h2>📞 Contact</h2>
+<p>Email : <a href="mailto:eugenewyakpaoka@gmail.com">eugenewyakpaoka@gmail.com</a></p>
+<p>Téléphone : 67701169</p>
+</section>
+
+<footer>
+<p>Les maths faciles, EuMathematica | Auteur : Eugène W.Y AKPAOKA © 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
